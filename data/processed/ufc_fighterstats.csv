@@ -1,0 +1,12 @@
+name,slug,striking_accuracy_pct,takedown_accuracy_pct,sig_strikes_landed,sig_strikes_attempted,takedowns_landed,takedowns_attempted,sig_str_landed_per_min,sig_str_absorbed_per_min,takedown_avg_per_15min,submission_avg_per_15min,sig_str_defense_pct,takedown_defense_pct,knockdown_avg,avg_fight_time,sig_strikes_by_position.standing,sig_strikes_by_position.clinch,sig_strikes_by_position.ground,sig_strikes_by_target.head,sig_strikes_by_target.body,sig_strikes_by_target.leg,win_by_method.ko_tko,win_by_method.decision,win_by_method.submission
+Conor McGregor,conor-mcgregor,50,56,599,1204,,9,5.32,4.66,0.67,0.13,54,67,1.73,08:02,,,,,,,19,2,1
+Khabib Nurmagomedov,khabib-nurmagomedov,49,48,705,1444,49.0,127,4.1,1.75,5.32,0.79,65,85,0.17,13:13,,,,,,,8,10,11
+Jon Jones,jon-jones,59,46,1564,2655,36.0,98,4.38,2.24,1.89,0.46,64,95,0.25,14:52,,,,,,,11,10,7
+Israel Adesanya,israel-adesanya,48,9,1313,2714,,11,4.03,3.22,0.05,0.14,56,76,0.6,17:09,,,,,,,16,8,0
+Kamaru Usman,kamaru-usman,52,44,1411,2719,28.0,143,4.16,2.67,2.79,0.09,55,90,0.44,17:50,,,,,,,9,11,1
+Georges St-Pierre,georges-st-pierre,54,74,1393,2598,90.0,137,3.78,1.4,4.16,1.1,73,84,0.37,13:09,,,,,,,8,12,6
+Max Holloway,max-holloway,48,53,3681,7647,4.0,15,6.91,4.61,0.23,0.28,59,81,0.34,16:39,,,,,,,12,13,2
+José Aldo,jose-aldo,46,52,1617,3492,12.0,27,3.65,3.81,0.47,0.14,60,93,0.41,14:17,,,,,,,17,14,1
+Demetrious Johnson,demetrious-johnson,55,56,1291,2362,74.0,149,3.43,1.66,3.35,0.52,67,66,0.16,17:56,,,,,,,5,11,11
+BJ Penn,bj-penn,49,55,1146,2346,26.0,60,2.76,3.2,1.19,0.51,57,75,0.29,12:59,,,,,,,7,3,6
+Daniel Cormier,daniel-cormier,53,45,1216,2310,17.0,78,4.25,2.92,1.83,0.42,55,80,0.26,12:27,,,,,,,10,7,5
