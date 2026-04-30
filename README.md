@@ -83,9 +83,9 @@ pip install -r requirements.txt
 
 python src/main.py
 
+```
 
 **👤 Author**
 
 Jeffrey Lee
-FP&A Analyst → Aspiring Data Engineer
-Irvine, CA
+
