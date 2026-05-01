@@ -34,7 +34,7 @@ UFC API → Extract → Transform → Load (CSV) → Visualize (Matplotlib/Seabo
 - Cleans and normalizes raw fighter data with Pandas
 - Loads structured data into CSV format
 - Generates offensive vs defensive efficiency visualization (strikes landed vs absorbed per minute)
-- Modular ETL design — each stage is independently maintainable
+- Modular ETL design where each stage is independently maintainable
 - Fighter list managed via centralized config
 
 ---
@@ -101,9 +101,9 @@ python src/main.py
 
 ## 💡 Sample Insights
 
-- **Khabib Nurmagomedov** has the best offensive/defensive efficiency ratio — high strikes landed with very low absorption
-- **Max Holloway** is the highest volume striker on the list but also absorbs significant punishment — classic pressure fighter
-- **Georges St-Pierre** shows the largest gap between offense and defense, landing nearly 3x more strikes than he absorbs
+- **Khabib Nurmagomedov** posted the highest offense-to-defense ratio, reflecting his ability to control opponents while limiting return strikes.
+- **Max Holloway** leads in total strikes landed per minute but shows a higher absorption rate that is consistent with his high-output fighting style
+- **Georges St-Pierre** demonstrates the widest margin between strikes landed and absorbed, suggesting elite defensive awareness alongside active offense
 
 ---
 
