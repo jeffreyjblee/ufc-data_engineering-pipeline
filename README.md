@@ -22,8 +22,7 @@ UFC API
 - Extracts fighter data from UFC API (RapidAPI)
 - Cleans and standardizes raw fighter statistics
 - Computes performance metrics:
-  - Win rate
-  - Strike accuracy (if available)
+  - Strike/takedown accuracy 
   - Fight history aggregation
 - Loads structured data into CSV or SQLite
 - Supports downstream analytics and visualization
@@ -36,9 +35,8 @@ UFC API
 - Python
 - Pandas
 - Requests (API integration)
-- SQLite (optional storage layer)
+- SQLite 
 - python-dotenv (environment variables)
-- Matplotlib / Streamlit (optional visualization)
 
 ---
 
@@ -59,7 +57,6 @@ ufc-data-engineering-pipeline/
 ├── requirements.txt
 └── README.md
 ```
-
 
 ---
 
