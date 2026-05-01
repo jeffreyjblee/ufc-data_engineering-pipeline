@@ -17,5 +17,6 @@ config/.env
 .DS_Store
 Thumbs.db. i d e a / 
  
-
+#visualization
+ufc_viz.png
  
