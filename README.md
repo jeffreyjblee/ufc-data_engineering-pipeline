@@ -8,7 +8,7 @@
 
 ![Offensive vs Defensive Efficiency](images/ufc_viz.png)
 
-*Significant strikes landed vs absorbed per minute — revealing each fighter's offensive and defensive efficiency*
+**Significant strikes landed vs absorbed per minute across 11 elite UFC fighters**
 
 ---
 
