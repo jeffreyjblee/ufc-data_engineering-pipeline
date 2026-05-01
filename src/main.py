@@ -46,7 +46,7 @@ def main():
     ax.set_facecolor('white')
 
     plt.tight_layout()
-    plt.savefig(BASE_DIR / 'ufc_viz.png', dpi=150, bbox_inches='tight')
+    plt.savefig(BASE_DIR / 'images' / 'ufc_viz.png', dpi=150, bbox_inches='tight')
     print("Chart saved as ufc_viz.png!")
 
 if __name__ == "__main__":
