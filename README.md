@@ -1,32 +1,41 @@
 # 🥊 UFC Data Engineering Pipeline
 
-## 📌 Overview
-This project is an end-to-end data engineering pipeline that extracts, transforms, and analyzes UFC fighter data using public API sources. The goal is to build a structured dataset of fighter statistics and generate meaningful performance metrics for analysis and visualization.
+> An end-to-end Python data engineering pipeline that extracts, transforms, loads, and visualizes UFC fighter statistics using the UFC API via RapidAPI.
 
-This project was built to demonstrate practical data engineering skills including API ingestion, ETL pipeline design, data cleaning, and analytical modeling.
+---
+
+## 📊 Sample Output
+
+![Offensive vs Defensive Efficiency](images/ufc_viz.png)
+
+*Significant strikes landed vs absorbed per minute — revealing each fighter's offensive and defensive efficiency*
+
+---
+
+## 📌 Overview
+
+Built out of a lifelong passion for martial arts, this project demonstrates a full ETL pipeline integrating UFC API data to create structured datasets and meaningful performance insights.
+
+**Key skills demonstrated:** API ingestion, ETL pipeline design, data cleaning, analytical modeling, and data visualization.
 
 ---
 
 ## ⚙️ Architecture
 
-UFC API  
-→ Python ETL Pipeline  
-→ Pandas Data Processing  
-→ Structured Dataset (CSV / SQLite)  
-→ Analytics / Dashboard Layer
+```
+UFC API → Extract → Transform → Load (CSV) → Visualize (Matplotlib/Seaborn)
+```
 
 ---
 
 ## 🚀 Features
 
-- Extracts fighter data from UFC API (RapidAPI)
-- Cleans and standardizes raw fighter statistics
-- Computes performance metrics:
-  - Strike/takedown accuracy 
-  - Fight history aggregation
-- Loads structured data into CSV or SQLite
-- Supports downstream analytics and visualization
-- Modular ETL pipeline design for scalability
+- Extracts live fighter statistics from the UFC API (RapidAPI)
+- Cleans and normalizes raw fighter data with Pandas
+- Loads structured data into CSV format
+- Generates offensive vs defensive efficiency visualization (strikes landed vs absorbed per minute)
+- Modular ETL design — each stage is independently maintainable
+- Fighter list managed via centralized config
 
 ---
 
@@ -34,26 +43,32 @@ UFC API
 
 - Python
 - Pandas
-- Requests (API integration)
-- SQLite 
-- python-dotenv (environment variables)
+- Requests
+- Matplotlib
+- Seaborn
+- python-dotenv
 
 ---
 
 ## 📁 Project Structure
-```text
+
+```
 ufc-data-engineering-pipeline/
 ├── src/
+│   ├── main.py
+│   ├── config/
+│   │   └── settings.py
 │   ├── extract/
+│   │   └── fighter_api.py
 │   ├── transform/
+│   │   └── normalize.py
 │   └── load/
-├── main.py
+│       └── csv_loader.py
 ├── data/
-│   ├── raw/
 │   └── processed/
-├── notebooks/
-├── sql/
-├── config/
+├── images/
+│   └── ufc_viz.png
+├── .gitignore
 ├── requirements.txt
 └── README.md
 ```
@@ -62,27 +77,40 @@ ufc-data-engineering-pipeline/
 
 ## 🔐 Environment Variables
 
-This project uses environment variables to securely store API credentials.
-
 Create a `.env` file in the root directory:
 
-Do NOT commit your `.env` file to GitHub.
+```
+RAPIDAPI_KEY=your_key_here
+RAPIDAPI_HOST=ufc-api5.p.rapidapi.com
+```
+
+Do **not** commit your `.env` file to GitHub.
 
 ---
 
 ## ▶️ How to Run
 
 ```bash
-git clone https://github.com/jeffreyjblee/ufc-data-engineering-pipeline.git
+git clone https://github.com/jeffreyjblee/ufc-data_engineering-pipeline.git
 cd ufc-data-engineering-pipeline
-
 pip install -r requirements.txt
-
 python src/main.py
-
 ```
 
-**👤 Author**
+---
 
-Jeffrey Lee
+## 💡 Sample Insights
 
+- **Khabib Nurmagomedov** has the best offensive/defensive efficiency ratio — high strikes landed with very low absorption
+- **Max Holloway** is the highest volume striker on the list but also absorbs significant punishment — classic pressure fighter
+- **Georges St-Pierre** shows the largest gap between offense and defense, landing nearly 3x more strikes than he absorbs
+
+---
+
+## ⚠️ Disclaimer
+
+This project is for educational purposes only and is not affiliated with or endorsed by the UFC.
+
+---
+
+**👤 Author:** Jeffrey Lee
